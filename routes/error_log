@@ -1,0 +1,48 @@
+[26-Jul-2025 23:53:32 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[26-Jul-2025 23:53:32 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23
+[26-Jul-2025 23:53:33 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[26-Jul-2025 23:53:33 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23
+[26-Jul-2025 23:53:33 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[26-Jul-2025 23:53:33 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/api.php:17
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/api.php on line 17
+[09-Aug-2025 18:29:57 America/Boise] PHP Fatal error:  Uncaught Error: Class "Illuminate\Support\Facades\Route" not found in /home4/molexinf/public_html/icvtorg/routes/web.php:23
+Stack trace:
+#0 {main}
+  thrown in /home4/molexinf/public_html/icvtorg/routes/web.php on line 23

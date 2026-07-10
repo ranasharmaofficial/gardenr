@@ -1,0 +1,143 @@
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+
+
+.category-card {
+    background: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.08);
+    padding: 15px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.category-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+}
+
+.category-img {
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 12px;
+}
+
+.category-img img {
+    max-height: 105px;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.category-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #2d2d2d;
+    line-height: 1.4;
+}
+
+
+.product-description {
+    max-width: 100%;
+    overflow-x: hidden;              /* ⛔ stop horizontal scroll */
+    word-wrap: break-word;           /* break long words */
+    overflow-wrap: break-word;
+    white-space: normal;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+/* 🔥 VERY IMPORTANT for pasted HTML */
+.product-description * {
+    max-width: 100% !important;
+    box-sizing: border-box;
+}
+
+/* Fix images inside description */
+.product-description img {
+    max-width: 100% !important;
+    height: auto !important;
+    display: block;
+}
+
+/* Fix tables (MOST COMMON CAUSE) */
+.product-description table {
+    width: 100% !important;
+    display: block;
+    overflow-x: auto;
+}
+
+/* Fix inline styles & long links */
+.product-description a,
+.product-description span,
+.product-description p,
+.product-description div {
+    word-break: break-word;
+}
+
+
+/* Common Badge Style */
+.badge {
+    display: inline-block;
+    padding: 6px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: #fff;
+}
+
+/* Success Badge (Green) */
+.badge-success {
+    background-color: #28a745;
+}
+
+/* Danger Badge (Red) */
+.badge-danger,
+.badge-bg-danger {
+    background-color: #dc3545;
+}
+
+/* Optional: Rounded Pill */
+.badge-pill {
+    border-radius: 50px;
+}
+
+/* custome jquery accordion */
+
+.custom-accordion .accordion-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.accordion-header {
+    background: #f8f9fa;
+    padding: 12px 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.accordion-header:hover {
+    background: #e9ecef;
+}
+
+.accordion-body {
+    display: none;
+    padding: 15px;
+    background: #fff;
+}
+
+.icon {
+    font-size: 18px;
+    font-weight: bold;
+    transition: 0.3s;
+}
