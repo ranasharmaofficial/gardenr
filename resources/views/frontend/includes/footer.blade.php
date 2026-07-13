@@ -44,7 +44,7 @@
 
     <div class="container">
 
-        <div class="row g-4">
+        <div class="row g-4 ">
 
             <!-- Brand -->
             <div class="col-lg-3 col-md-6 tg-footer-brand">
@@ -62,7 +62,7 @@
             </div>
 
             <!-- Quick Links -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <h4 class="tg-title mb-3">Quick Links</h4>
                 <ul class="tg-list">
                     <li><a href="{{ url('/') }}">Home</a></li>
@@ -74,7 +74,7 @@
             </div>
 
             <!-- Categories -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <h4 class="tg-title mb-3">Categories</h4>
                 <ul class="tg-list">
                     <li><a href="{{ route('category.slug', 'indoor-plants') }}">Indoor Plants</a></li>
@@ -87,7 +87,7 @@
             </div>
 
             <!-- Contact -->
-            <div class="col-lg-3 col-md-6">
+            <div class="col-lg-3 col-md-6 mt-4">
                 <h4 class="tg-title mb-3">Contact Us</h4>
 
                 <p class="contactus"><i class="fa fa-map-marker-alt"></i> Purnea, Bihar</p>
@@ -113,8 +113,8 @@
                 &copy; 2026 Rich Money. All Rights Reserved.
             </div>
 
-            <div class="tg-policy">
-                <a href="{{ route('privacyPolicy') }}">Privacy Policy</a>
+            <div class="tg-copy">
+                <a class="text-black" href="{{ route('privacyPolicy') }}">Privacy Policy</a>
             </div>
 
         </div>
