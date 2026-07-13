@@ -48,7 +48,7 @@
 
             <!-- Brand -->
             <div class="col-lg-3 col-md-6 tg-footer-brand">
-                <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="The Gardener">
+                <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money">
                     <p class="tg-text">
                         Premium indoor &amp; outdoor plants, gardening tools, seeds and eco-friendly solutions for a greener lifestyle.
                     </p>
@@ -92,7 +92,7 @@
 
                 <p class="contactus"><i class="fa fa-map-marker-alt"></i> Purnea, Bihar</p>
                 <p class="contactus"><i class="fa fa-phone"></i> +91 9835034894</p>
-                <p class="contactus"><i class="fa fa-envelope"></i> kasule@garden.in</p>
+                <p class="contactus"><i class="fa fa-envelope"></i> kasule@richmoney.in</p>
                 <p class="contactus"><i class="fa fa-clock"></i> Mon - Sun: 9AM - 8PM</p>
 
                 <div class="footer-badges">
@@ -110,7 +110,7 @@
         <div class="tg-bottom d-flex flex-column flex-md-row justify-content-between align-items-center">
 
             <div class="tg-copy">
-                &copy; 2026 The Gardener. All Rights Reserved.
+                &copy; 2026 Rich Money. All Rights Reserved.
             </div>
 
             <div class="tg-policy">

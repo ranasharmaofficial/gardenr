@@ -23,7 +23,7 @@
             <div class="col-lg-9 order-lg-last dashboard-content">
                 <h2>My Dashboard</h2>
                 <div class="alert alert-success alert-intro" role="alert">
-                    Thank you for registering with The Gardener.
+                    Thank you for registering with Rich Money.
                 </div>
                 
                 <div class="mb-4"></div>

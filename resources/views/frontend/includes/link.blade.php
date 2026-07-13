@@ -1,7 +1,7 @@
-    <title>The GardeneR</title>
-    <meta name="keywords" content="Plants Nursery Bihar, Indoor Plants, Outdoor Plants, Gardening Plants, Flower Plants, Air Purifier Plants, Garden Accessories, The Gardener Bihar" />
-    <meta name="description" content="The Gardener is a trusted plants and gardening website in Bihar offering indoor plants, outdoor plants, flower plants, pots, planters, seeds, and gardening accessories for your home and office." />
-    <meta name="author" content="The Gardener" />
+    <title>Rich Money</title>
+    <meta name="keywords" content="Plants Nursery Bihar, Indoor Plants, Outdoor Plants, Gardening Plants, Flower Plants, Air Purifier Plants, Garden Accessories, Rich Money Bihar" />
+    <meta name="description" content="Rich Money is a trusted plants and gardening website in Bihar offering indoor plants, outdoor plants, flower plants, pots, planters, seeds, and gardening accessories for your home and office." />
+    <meta name="author" content="Rich Money" />
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="{{ static_asset('assets/assets_web/assets/images/logo.png') }}">
     <!-- Plugins CSS File -->

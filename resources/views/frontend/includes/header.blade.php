@@ -94,7 +94,7 @@
                                 <i class="fas fa-bars"></i>
                             </button>
                             <a href="{{ url('') }}" class="logo">
-                                <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Porto Logo">
+                                <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money">
                             </a>
                         </div>
                         <!-- End .header-left -->

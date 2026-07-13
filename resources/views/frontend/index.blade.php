@@ -100,7 +100,7 @@
                             <img src="{{ static_asset('assets/assets_web/images/demoes/demo4/banners/b1.jpg') }}" alt="banner" />
                         </figure>
                         <div class="banner-layer">
-                            <h3 class="m-b-2">The Gardener</h3>
+                            <h3 class="m-b-2">Rich Money</h3>
                             <h4 class="m-b-3 text-primary">
                             <sup class="text-dark"><del>20%</del></sup>40%<sup>OFF</sup></h4>
                             <p class="mb-3">
@@ -164,7 +164,8 @@ PLANT INFO GRID SECTION
         <!-- CARD 01 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s1.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s1.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s1.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -185,7 +186,7 @@ PLANT INFO GRID SECTION
         <!-- CARD 02 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s2.jpg" alt="">
+                <img src="{{ static_asset('assets/assets_web/images/s2.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -209,7 +210,8 @@ PLANT INFO GRID SECTION
         <!-- CARD 03 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s3.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s3.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s3.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -232,7 +234,8 @@ PLANT INFO GRID SECTION
         <!-- CARD 04 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s4.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s4.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s4.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -256,7 +259,9 @@ PLANT INFO GRID SECTION
         <!-- CARD 05 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s5.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s5.jpg" alt=""> -->
+
+                <img src="{{ static_asset('assets/assets_web/images/s5.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -268,20 +273,19 @@ PLANT INFO GRID SECTION
             </div>
 
             <div class="gxs-content-box">
-                 <h3>Terrace & Balcony Gardening</h3>
+                  <h3>Terrace & Balcony Gardening</h3>
                 <p>
                     Smart solutions to transform terraces and balconies
                     into lush green productive spaces.
                 </p>
-
-
             </div>
         </div>
 
         <!-- CARD 06 -->
         <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s6.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s6.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s6.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -303,7 +307,8 @@ PLANT INFO GRID SECTION
         
          <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s7.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s7.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s7.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -323,11 +328,10 @@ PLANT INFO GRID SECTION
             </div>
         </div>
         
-      
-        
          <div class="gxs-card-item">
             <div class="gxs-image-box">
-                <img src="https://gardenr.in/public/assets/assets_web/images/s8.jpg" alt="">
+                <!-- <img src="https://gardenr.in/public/assets/assets_web/images/s8.jpg" alt=""> -->
+                <img src="{{ static_asset('assets/assets_web/images/s8.jpg') }}" alt="">
 
                 <div class="gxs-dark-layer"></div>
 
@@ -585,11 +589,11 @@ PLANT INFO GRID SECTION
             <div class="tg-about-wrapper">
 
                 <div class="tg-section-title">
-                    <h2>About The Gardener</h2>
+                    <h2>About Rich Money</h2>
 
                     <p>
-                        The Gardener is your trusted online destination for beautiful indoor plants, flowering plants, succulents, and premium gardening essentials. We bring fresh, healthy, and carefully nurtured plants directly to your doorstep to make your home greener and
-                        more vibrant. Whether you are a beginner or a passionate plant lover, The Gardener helps you create your perfect green space with ease.
+                        Rich Money is your trusted online destination for beautiful indoor plants, flowering plants, succulents, and premium gardening essentials. We bring fresh, healthy, and carefully nurtured plants directly to your doorstep to make your home greener and
+                        more vibrant. Whether you are a beginner or a passionate plant lover, Rich Money helps you create your perfect green space with ease.
                     </p>
                 </div>
 

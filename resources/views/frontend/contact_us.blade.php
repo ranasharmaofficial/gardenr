@@ -200,7 +200,7 @@ textarea.form-control{
                                     <img src="{{static_asset('assets/assets_web/images/cpi3.svg')}}" alt="">
                                 </div>
                                 <h4>Email Address</h4>
-                                <p>info@thegardener.com</p>
+                                <p>info@richmoney.in</p>
                             </div>
                         </div>
                     </div>

@@ -81,7 +81,7 @@ class CartController extends Controller
             if (!$user) {
                 $email = $request->filled('email')
                     ? $request->email
-                    : 'customer-' . $request->mobile . '-' . Str::lower(Str::random(5)) . '@gardenr.local';
+                    : 'customer-' . $request->mobile . '-' . Str::lower(Str::random(5)) . '@richmoney.local';
 
                 $user = User::create([
                     'first_name' => $request->name,
@@ -147,7 +147,7 @@ class CartController extends Controller
 
         try {
             $order->load(['user', 'address', 'orderDetails.product']);
-            if ($order->user && filter_var($order->user->email, FILTER_VALIDATE_EMAIL) && !Str::endsWith($order->user->email, '@gardenr.local')) {
+            if ($order->user && filter_var($order->user->email, FILTER_VALIDATE_EMAIL) && !Str::endsWith($order->user->email, '@richmoney.local')) {
                 \Illuminate\Support\Facades\Mail::to($order->user->email)->send(new \App\Mail\OrderPlacedMail($order));
             }
         } catch (\Exception $e) {

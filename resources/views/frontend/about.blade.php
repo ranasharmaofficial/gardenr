@@ -30,11 +30,11 @@
             <div class="col-lg-6 animate-item stagger">
                 <div class="about-content">
                     <h2 class="about-title">
-                        About Us – <span class="highlight">The Gardener</span>
+                        About Us – <span class="highlight">Rich Money</span>
                     </h2>
 
                     <p class="about-desc mt-4">
-						The Gardener is a trusted and fast-growing plant and garden solutions brand committed to transforming 
+						Rich Money is a trusted and fast-growing plant and garden solutions brand committed to transforming 
 						the gardening experience for families. Built on the foundation of quality, 
 						affordability, and customer satisfaction, we provide a wide selection of gardening essentials 
 						designed to improve everyday living.  
@@ -46,7 +46,7 @@
 						freshness, and long-lasting greenery.  
 						<br><br>
 
-						At The Gardener, we believe that making a garden beautiful should not be expensive or complicated. 
+						At Rich Money, we believe that making a garden beautiful should not be expensive or complicated. 
 						That’s why we focus on transparent pricing, reliable service, and honest product value. 
 						Our team is dedicated to helping customers make informed choices by providing clear 
 						information, assisting in plant care, and offering dependable after-sales support.  
@@ -54,13 +54,13 @@
 
 						We take pride in our customer-first approach — from fast and secure delivery to 
 						doorstep support and personalized assistance. Whether you are creating a new garden 
-						or upgrading your existing space, The Gardener is your one-stop destination for trusted 
+						or upgrading your existing space, Rich Money is your one-stop destination for trusted 
 						garden solutions.  
 						<br><br>
 
 						With a commitment to continuous improvement, we aim to expand our offerings, introduce 
 						more trusted varieties, and make modern lifestyle plants accessible to families everywhere. 
-						The Gardener is not just a shopping destination — it is a partner in 
+						Rich Money is not just a shopping destination — it is a partner in 
 						building better gardens, better environments, and better living for every customer we serve.
 					</p>
 
@@ -95,7 +95,7 @@
 
                 <div class="subtitle ed-sec-tt-anim ed-has-anim-char">
                     Upgrade your home with premium plants, trusted gardening tools, 
-                    and high-quality essentials from <strong>The Gardener</strong>. 
+                    and high-quality essentials from <strong>Rich Money</strong>. 
                     Enjoy great prices, reliable products, and fast delivery.
                 </div>
 

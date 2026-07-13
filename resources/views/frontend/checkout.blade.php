@@ -5,7 +5,7 @@
 @php
     $savedAddress = $address ?? null;
     $authEmail = auth()->user()->email ?? '';
-    $authEmail = \Illuminate\Support\Str::endsWith($authEmail, '@gardenr.local') ? '' : $authEmail;
+    $authEmail = \Illuminate\Support\Str::endsWith($authEmail, '@richmoney.local') ? '' : $authEmail;
     $checkoutName = old('name', $savedAddress->name ?? trim((auth()->user()->first_name ?? '').' '.(auth()->user()->last_name ?? '')));
     $checkoutMobile = old('mobile', $savedAddress->mobile ?? auth()->user()->mobile ?? '');
     $checkoutEmail = old('email', $savedAddress->email ?? $authEmail);
