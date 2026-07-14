@@ -13,7 +13,7 @@
 				'loop': false
 			}">
             <div class="home-slide home-slide1 banner">
-                <img class="slide-bg" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-1.jpg') }}" alt="slider image">
+                <img class="slide-bg" style="width: 100%; height: 560px; object-fit: cover; object-position: center; background-color: #ccc;" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}" alt="slider image">
                 <div class="container d-flex align-items-center">
                     <div class="banner-layer appear-animate" data-animation-name="fadeInUpShorter">
                         <h4 class="text-transform-none m-b-3 s-content">Bring Nature Closer to Your Home!</h4>
@@ -27,7 +27,7 @@
             <!-- End .home-slide -->
 
             <div class="home-slide home-slide2 banner banner-md-vw">
-                <img class="slide-bg" style="background-color: #ccc;" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}" alt="slider image">
+                <img class="slide-bg" style="width: 100%; height: 560px; object-fit: cover; object-position: center; background-color: #ccc;" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}" alt="slider image">
                 <div class="container d-flex align-items-center">
                     <div class="banner-layer d-flex justify-content-center appear-animate" data-animation-name="fadeInUpShorter">
                         <div class="mx-auto">
