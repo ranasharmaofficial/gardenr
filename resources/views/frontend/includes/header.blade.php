@@ -44,7 +44,7 @@
 
 
  	<div class="page-wrapper">
-        <div class="top-notice bg-primary text-white">
+        {{-- <div class="top-notice bg-primary text-white">
             <div class="container text-center">
                 <h5 class="d-inline-block">Get Up to <b>40% OFF</b> New-Season Styles</h5>
 
@@ -52,7 +52,7 @@
                 <button title="Close (Esc)" type="button" class="mfp-close">×</button>
             </div>
             <!-- End .container -->
-        </div>
+        </div> --}}
         <!-- End .top-notice -->
 
         <header class="header">
