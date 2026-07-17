@@ -46,7 +46,11 @@
         ->first();
 @endphp
 <style>
-
+.rm-footer-logo {
+    max-width: 220px;
+    height: auto;
+    margin-bottom: 16px;
+}
 </style>
 
 <footer class="rm-footer">
@@ -73,7 +77,7 @@
             <div class="row g-4">
 
                 {{-- Brand Column --}}
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-3 col-md-5">
                     <div class="rm-footer-brand">
                         <a href="{{ url('/') }}">
                             <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money"
@@ -106,7 +110,7 @@
                 </div>
 
                 {{-- Quick Links --}}
-                <div class="col-lg-2 col-md-6 mt-4">
+                <div class="col-lg-3 col-md-6 mt-4">
                     <div class="rm-footer-widget">
                         <h4 class="rm-footer-title">Quick Links</h4>
                         <div class="rm-footer-divider"></div>
@@ -141,7 +145,7 @@
                 </div> -->
 
                 {{-- Help & Policies --}}
-                <div class="col-lg-2 col-md-6 mt-4">
+                <div class="col-lg-3 col-md-6 mt-4">
                     <div class="rm-footer-widget">
                         <h4 class="rm-footer-title">Help & Info</h4>
                         <div class="rm-footer-divider"></div>
@@ -159,7 +163,7 @@
                     </div>
                 </div>
 
-                <div class="col-span-1 mt-4">
+                <div class="col-lg-3 col-md-6 mt-4">
                     <h3 class="text-2xl font-bold text-white">
                         Contact
                     </h3>
@@ -213,11 +217,6 @@
             </div>
         </div>
     </div>
-
-</footer>
-<!-- End .footer -->
-</div>
-
 
 <div class="mobile-menu-overlay"></div>
 <!-- End .mobil-menu-overlay -->

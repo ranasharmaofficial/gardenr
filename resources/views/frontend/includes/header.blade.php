@@ -39,7 +39,12 @@
         ->pluck('value')
         ->first();
 @endphp
-
+<style>
+    .rm-header-logo {
+        max-width: 70px;
+        height: auto;
+    }
+</style>
 
 
 <div class="page-wrapper">
@@ -94,11 +99,8 @@
                     </button>
                     <div>
                         <a href="{{ url('') }}" class="logo">
-                            <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money">
+                            <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money" class="rm-header-logo">
                         </a>
-                        <div class="rm-brand-highlight">
-                            <i class="fa fa-leaf"></i> Fresh plants • trusted service
-                        </div>
                     </div>
                 </div>
                 <!-- End .header-left -->
@@ -347,3 +349,6 @@
         <!-- End .header-bottom -->
     </header>
     <!-- End .header -->
+<style>
+    
+</style>
