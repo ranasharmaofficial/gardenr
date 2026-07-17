@@ -82,4 +82,49 @@
         document.getElementById('submitBtn').disabled = !this.checked;
     });
 </script>
+<script>
+		$(document).on('click', '.make_enquiry', function(e) {
+			e.preventDefault();
+			var clk_btn = $(".make_enquiry");
+			clk_btn.prop('disabled', true);
+			var formData = new FormData(document.getElementById("contact-enquiry-form"));
+			$.ajaxSetup({
+				headers: {
+					'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+				}
+
+			});
+			$.ajax({
+				type: "POST"
+				, url: "{{ route('enq.postOnlineEnquiry') }}"
+				, data: formData
+				, processData: false
+				, contentType: false
+				, dataType: "JSON"
+				, success: function(data) {
+					// console.log('status ' + data.status);
+					if (data.status == true) {
+						toastr.success('Thanyou For Your Enquiry.');
+						location.reload();
+					} else {
+						toastr.error('Something went wrong.');
+					}
+				}
+				, error: function(err) {
+
+					document.getElementById('show-contact-form-error').style = "display: block";
+					clk_btn.prop('disabled', false);
+					let error = err.responseJSON;
+					console.log(error);
+					$.each(error.errors, function(index, value) {
+						$('.errorMsgntainer').append('<span class="text-danger">' + value +
+
+							'<span>' + '<br>');
+					});
+
+				}
+			});
+		});
+
+	</script>
 @endsection

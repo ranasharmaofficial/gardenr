@@ -10,10 +10,18 @@
     $contact_address = get_business_single_cache_value('contact_address', 'footer_setup', 'contact_address');
 
     $corporate_address = get_business_single_cache_value('corporate_address', 'footer_setup', 'corporate_address');
-    $corporate_address_phone = get_business_single_cache_value('corporate_address_phone', 'footer_setup', 'corporate_address_phone');
+    $corporate_address_phone = get_business_single_cache_value(
+        'corporate_address_phone',
+        'footer_setup',
+        'corporate_address_phone',
+    );
 
     $registered_address = get_business_single_cache_value('registered_address', 'footer_setup', 'registered_address');
-    $registered_address_phone = get_business_single_cache_value('registered_address_phone', 'footer_setup', 'registered_address_phone');
+    $registered_address_phone = get_business_single_cache_value(
+        'registered_address_phone',
+        'footer_setup',
+        'registered_address_phone',
+    );
     $footerWidgetOne = getFooterWidget('one');
     $footerWidgetTwo = getFooterWidget('two');
     $footerWidgetThree = getFooterWidget('three');
@@ -37,6 +45,9 @@
         ->pluck('value')
         ->first();
 @endphp
+<style>
+
+</style>
 
 <footer class="rm-footer">
 
@@ -45,16 +56,19 @@
         <div class="rm-footer-spotlight">
             <div class="row align-items-center g-3">
                 <div class="col-lg-8">
-                    <h4 class="mb-2" style="color:#2e7d32; font-weight:700;">Bring home fresh greenery with confidence</h4>
-                    <p class="mb-0" style="color:#4f6b53;">Premium plants, premium care, and friendly support — all under one trusted green brand.</p>
+                    <h4 class="mb-2" style="color:#3b7c3f; font-weight:700;">Bring home fresh greenery with confidence
+                    </h4>
+                    <p class="mb-0" style="color:#4f6b53;">Premium plants, premium care, and friendly support — all
+                        under one trusted green brand.</p>
                 </div>
                 <div class="col-lg-4 text-lg-right">
-                    <a href="{{ route('shop') }}" class="btn btn-success px-4 py-2" style="background:#4caf50; border-color:#4caf50;">Shop Now</a>
+                    <a href="{{ route('shop') }}" class="btn btn-success px-4 py-2"
+                        style="background:#4caf50; border-color:#4caf50;">Shop Now</a>
                 </div>
             </div>
         </div>
     </div>
-    <div class="rm-footer-main">
+    <div class="rm-footer-main py-5" style="background:#368136;">
         <div class="container">
             <div class="row g-4">
 
@@ -62,31 +76,37 @@
                 <div class="col-lg-4 col-md-6">
                     <div class="rm-footer-brand">
                         <a href="{{ url('/') }}">
-                            <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money" class="rm-footer-logo">
+                            <img src="{{ static_asset('assets/assets_web/images/logo.png') }}" alt="Rich Money"
+                                class="rm-footer-logo">
                         </a>
                         <div class="rm-footer-social">
-                            <a href="{{ $facebook_value ?? '#' }}" target="_blank" class="rm-fsocial-btn" title="Facebook">
+                            <a href="{{ $facebook_value ?? '#' }}" target="_blank" class="rm-fsocial-btn"
+                                title="Facebook">
                                 <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="{{ $instagram_value ?? '#' }}" target="_blank" class="rm-fsocial-btn" title="Instagram">
+                            <a href="{{ $instagram_value ?? '#' }}" target="_blank" class="rm-fsocial-btn"
+                                title="Instagram">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://wa.me/919534737643" target="_blank" class="rm-fsocial-btn" title="WhatsApp">
+                            <a href="https://wa.me/919534737643" target="_blank" class="rm-fsocial-btn"
+                                title="WhatsApp">
                                 <i class="fab fa-whatsapp"></i>
                             </a>
-                            <a href="{{ $twitter_value ?? '#' }}" target="_blank" class="rm-fsocial-btn" title="Twitter">
+                            <a href="{{ $twitter_value ?? '#' }}" target="_blank" class="rm-fsocial-btn"
+                                title="Twitter">
                                 <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="{{ $youtube_value ?? '#' }}" target="_blank" class="rm-fsocial-btn" title="YouTube">
+                            <a href="{{ $youtube_value ?? '#' }}" target="_blank" class="rm-fsocial-btn"
+                                title="YouTube">
                                 <i class="fab fa-youtube"></i>
                             </a>
                         </div>
-                        
+
                     </div>
                 </div>
 
                 {{-- Quick Links --}}
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2 col-md-6 mt-4">
                     <div class="rm-footer-widget">
                         <h4 class="rm-footer-title">Quick Links</h4>
                         <div class="rm-footer-divider"></div>
@@ -95,7 +115,8 @@
                             <li><a href="{{ route('shop') }}"><i class="fa fa-angle-right"></i> Shop Plants</a></li>
                             <li><a href="{{ url('about-us') }}"><i class="fa fa-angle-right"></i> About Us</a></li>
                             <li><a href="{{ url('legal') }}"><i class="fa fa-angle-right"></i> Legal</a></li>
-                            <li><a href="{{ url('business-plan') }}"><i class="fa fa-angle-right"></i> Business Plan</a></li>
+                            <li><a href="{{ url('business-plan') }}"><i class="fa fa-angle-right"></i> Business
+                                    Plan</a></li>
                             <li><a href="{{ route('news') }}"><i class="fa fa-angle-right"></i> News</a></li>
                             <li><a href="{{ route('contact') }}"><i class="fa fa-angle-right"></i> Contact Us</a></li>
                         </ul>
@@ -120,7 +141,7 @@
                 </div> -->
 
                 {{-- Help & Policies --}}
-                <div class="col-lg-2 col-md-6">
+                <div class="col-lg-2 col-md-6 mt-4">
                     <div class="rm-footer-widget">
                         <h4 class="rm-footer-title">Help & Info</h4>
                         <div class="rm-footer-divider"></div>
@@ -129,49 +150,53 @@
                             <li><a href="{{ route('register') }}"><i class="fa fa-angle-right"></i> Register</a></li>
                             <li><a href="{{ url('wishlist') }}"><i class="fa fa-angle-right"></i> My Wishlist</a></li>
                             <li><a href="{{ route('cart.page') }}"><i class="fa fa-angle-right"></i> Cart</a></li>
-                            <li><a href="{{ route('privacyPolicy') }}"><i class="fa fa-angle-right"></i> Privacy Policy</a></li>
-                            <li><a href="{{ route('termsCondition') }}"><i class="fa fa-angle-right"></i> Terms & Conditions</a></li>
+                            <li><a href="{{ route('privacyPolicy') }}"><i class="fa fa-angle-right"></i> Privacy
+                                    Policy</a></li>
+                            <li><a href="{{ route('termsCondition') }}"><i class="fa fa-angle-right"></i> Terms &
+                                    Conditions</a></li>
                             <li><a href="{{ route('blogs') }}"><i class="fa fa-angle-right"></i> Blog</a></li>
                         </ul>
                     </div>
                 </div>
 
-                {{-- Contact Info --}}
-                <div class="col-lg-2 col-md-6">
-                    <div class="rm-footer-widget">
-                        <h4 class="rm-footer-title">Contact Us</h4>
-                        <div class="rm-footer-divider"></div>
-                        <ul class="rm-contact-info">
-                            <li>
-                                <div class="rm-contact-icon"><i class="fa fa-map-marker-alt"></i></div>
-                                <div class="rm-contact-text">SAMAY PUR BADLI, DELHI (110042)</div>
-                            </li>
-                            <li>
-                                <div class="rm-contact-icon"><i class="fa fa-phone-alt"></i></div>
-                                <div class="rm-contact-text">
-                                    <a href="tel:+919534737643">+91 9534737643</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="rm-contact-icon"><i class="fa fa-envelope"></i></div>
-                                <div class="rm-contact-text">
-                                    <a href="mailto:info.richmoney1@gmail.com">info.richmoney1@gmail.com</a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="rm-contact-icon"><i class="fa fa-clock"></i></div>
-                                <div class="rm-contact-text">Mon - Sun: 9AM - 8PM</div>
-                            </li>
-                            <li>
-                                <div class="rm-contact-icon"><i class="fab fa-whatsapp"></i></div>
-                                <div class="rm-contact-text">
-                                    <a href="https://wa.me/919534737643" target="_blank">WhatsApp Us</a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+                <div class="col-span-1 mt-4">
+                    <h3 class="text-2xl font-bold text-white">
+                        Contact
+                    </h3>
 
+                    <ul class="space-y-6">
+
+                        <li class="flex items-center">
+                            <i class="fas fa-home text-orange-400 text-lg w-6 "></i>
+                            <span class="ml-4 text-white">
+                                SAMAY PUR BADLI, DELHI (110042)
+                            </span>
+                        </li>
+
+                        <li class="flex items-center">
+                            <i class="fas fa-phone text-orange-400 text-lg w-6"></i>
+                            <a href="tel:+919534737643" class="ml-4 text-white hover:text-orange-400 transition">
+                                +91 9534737643
+                            </a>
+                        </li>
+
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope text-orange-400 text-lg w-6"></i>
+                            <a href="mailto:info.richmoney1@gmail.com"
+                                class="ml-4 text-white hover:text-orange-400 transition">
+                                info.richmoney1@gmail.com
+                            </a>
+                        </li>
+
+                        <li class="flex items-center">
+                            <i class="fas fa-download text-orange-400 text-lg w-6"></i>
+                            <a href="#" class="ml-4 text-white hover:text-orange-400 transition">
+                                Download Our App
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -182,7 +207,8 @@
             <div class="rm-footer-bottom-inner">
                 <div class="rm-copyright">
                     <i class="fa fa-leaf"></i>
-                    &copy; {{ date('Y') }} <strong>Rich Money</strong>. All Rights Reserved. | Crafted with <i class="fa fa-heart" style="color:#e74c3c;"></i> for Plant Lovers
+                    &copy; {{ date('Y') }} <strong>Rich Money</strong>. All Rights Reserved. | Crafted with <i
+                        class="fa fa-heart" style="color:#e74c3c;"></i> for Plant Lovers
                 </div>
             </div>
         </div>
@@ -191,7 +217,6 @@
 </footer>
 <!-- End .footer -->
 </div>
-<!-- End .page-wrapper -->
 
 
 <div class="mobile-menu-overlay"></div>
@@ -210,21 +235,31 @@
                         <li>
                             <a href="{{ route('shop') }}" class="nolink">Plants By Type</a>
                             <ul>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Indoor Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Outdoor Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Flower Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Air-Purifier Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Cactus & Succulent Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Fruit Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Indoor Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Outdoor Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Flower Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Air-Purifier Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Cactus & Succulent Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Fruit Plants</span></a></li>
                             </ul>
                         </li>
                         <li>
                             <a href="{{ route('shop') }}" class="nolink">Essential Plants</a>
                             <ul>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Money Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Lucky Bamboo Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Bonsai Plants</span></a></li>
-                                <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Flowering Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Money Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Lucky Bamboo Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Bonsai Plants</span></a></li>
+                                <li style="list-style: none;"><a class="level1"
+                                        href="{{ route('shop') }}"><span>Flowering Plants</span></a></li>
                             </ul>
                         </li>
                     </ul>
@@ -233,9 +268,12 @@
                 <li>
                     <a href="{{ route('shop') }}">Pots & Planters</a>
                     <ul>
-                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Plastic Pots</span></a></li>
-                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Ceramic Pots</span></a></li>
-                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Resin Pots</span></a></li>
+                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Plastic
+                                    Pots</span></a></li>
+                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Ceramic
+                                    Pots</span></a></li>
+                        <li style="list-style: none;"><a class="level1" href="{{ route('shop') }}"><span>Resin
+                                    Pots</span></a></li>
                     </ul>
                 </li>
 
@@ -252,14 +290,18 @@
         <!-- End .mobile-nav -->
 
         <form class="search-wrapper mb-2" action="{{ route('shop') }}">
-            <input type="text" name="q" class="form-control mb-0" placeholder="Search plants..." required />
+            <input type="text" name="q" class="form-control mb-0" placeholder="Search plants..."
+                required />
             <button class="btn icon-search text-white bg-transparent p-0" type="submit"></button>
         </form>
 
         <div class="social-icons">
-            <a href="{{ $facebook_value ?? '#' }}" class="social-icon social-facebook icon-facebook" target="_blank"></a>
-            <a href="{{ $twitter_value ?? '#' }}" class="social-icon social-twitter icon-twitter" target="_blank"></a>
-            <a href="{{ $instagram_value ?? '#' }}" class="social-icon social-instagram icon-instagram" target="_blank"></a>
+            <a href="{{ $facebook_value ?? '#' }}" class="social-icon social-facebook icon-facebook"
+                target="_blank"></a>
+            <a href="{{ $twitter_value ?? '#' }}" class="social-icon social-twitter icon-twitter"
+                target="_blank"></a>
+            <a href="{{ $instagram_value ?? '#' }}" class="social-icon social-instagram icon-instagram"
+                target="_blank"></a>
         </div>
     </div>
     <!-- End .mobile-menu-wrapper -->

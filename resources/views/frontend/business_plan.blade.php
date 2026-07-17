@@ -129,7 +129,7 @@
 </section>
 
 {{-- Income Streams --}}
-<section style="background: linear-gradient(135deg, #1b5e20, #2e7d32); padding: 60px 0;">
+<section style="background: linear-gradient(135deg, #398d40, #acf5b0); padding: 60px 0;">
     <div class="container">
         <div class="text-center mb-5">
             <h2 style="font-size:3rem; font-weight:800; color:#fff; margin-bottom:10px;">Multiple Income Streams</h2>
