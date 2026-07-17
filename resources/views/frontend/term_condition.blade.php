@@ -1,174 +1,47 @@
 @extends('frontend.layouts.master')
-@section('title') Terms & Conditions @endsection
+@section('title') Terms & Conditions - Rich Money @endsection
 
 @section('meta_tags')
 @endsection
 
 @section('content')
-	<style>
-		
-		/* Terms & Conditions Page Styling */
-.terms-page {
-    background: #ffffff;
-    padding: 35px 30px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-    max-width: 1100px;
-    margin: 0 auto;
-}
+<section id="ed-breadcrumb" class="ed-breadcrumb-sec" data-background="{{ static_asset('assets/assets_web/images/header-about5.jpg') }}">
+    <div class="container">
+        <div class="ed-breadcrumb-content">
+            <div class="ed-breadcrumb-text text-center headline ul-li">
+                <h2 class="bread_title">Terms & Conditions</h2>
+                <ul>
+                    <li><a href="{{ url('') }}">Home</a></li>
+                    <li>Terms & Conditions</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
 
-/* Main Heading */
-.terms-page h1 {
-    font-size: 32px;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 20px;
-    border-bottom: 3px solid #2563eb;
-    padding-bottom: 10px;
-}
-
-/* Section Headings */
-.terms-page h2 {
-    font-size: 20px;
-    font-weight: 600;
-    color: #111827;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    position: relative;
-    padding-left: 14px;
-}
-
-.terms-page h2::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 6px;
-    width: 5px;
-    height: 70%;
-    background-color: #2563eb;
-    border-radius: 3px;
-}
-
-/* Paragraphs */
-.terms-page p {
-    font-size: 15.5px;
-    line-height: 1.75;
-    color: #4b5563;
-    margin-bottom: 14px;
-}
-
-/* Links */
-.terms-page a {
-    color: #2563eb;
-    text-decoration: none;
-    font-weight: 500;
-}
-
-.terms-page a:hover {
-    text-decoration: underline;
-}
-
-/* Strong text */
-.terms-page strong {
-    color: #111827;
-}
-
-/* Footer / Last updated */
-.terms-page em {
-    display: block;
-    margin-top: 30px;
-    font-size: 14px;
-    color: #6b7280;
-    text-align: right;
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .terms-page {
-        padding: 25px 20px;
-    }
-
-    .terms-page h1 {
-        font-size: 26px;
-    }
-
-    .terms-page h2 {
-        font-size: 18px;
-    }
-
-    .terms-page p {
-        font-size: 14.5px;
-    }
-}
-	</style>
-	
-	<section id="ed-breadcrumb" class="ed-breadcrumb-sec" data-background="{{static_asset('assets/assets_web/images/header-about5.jpg')}}">
-		<div class="container">
-			<div class="ed-breadcrumb-content">
-				<div class="ed-breadcrumb-text text-center headline ul-li">
-					<h2 class="bread_title">Terms & Conditions</h2>
-					<ul>
-						<li><a href="{{ url('') }}">Home</a></li>
-						<li>Terms & Conditions</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</section>
-
-<!-- Start of Feature section
-  ============================================= -->
-	<section id="ed-cp-cta" class="ed-cp-cta-sec pt-130 pb-100">
-		<div class="container">
-			<div class="ed-cp-cta-content">
-				<div class="row justify-content-center">
-					<div class="col-lg-12 col-md-12">
-						<div class="terms-page">
-							<h1>Terms & Conditions</h1>
-
-							<p>Welcome to <strong>V2F Baazar</strong> (“we”, “our”, “us”). By accessing our website <a href="http://v2fbaazar.com/">http://v2fbaazar.com/</a> (the “Website”), you agree to follow and be bound by these Terms & Conditions (“Terms”). If you do not agree with any part of these Terms, please do not use the Website.</p>
-
-							<h2>1. Use of the Website</h2>
-							<p>You agree to use the Website only for lawful purposes and in a way that does not infringe the rights of others or restrict their use and enjoyment.</p>
-
-							<h2>2. Account Registration</h2>
-							<p>If you create an account on the Website, you are responsible for maintaining the security of your account credentials and for all activities that occur under your account.</p>
-
-							<h2>3. Content</h2>
-							<p>All content on this Website is the property of V2F Baazar unless otherwise stated. You may not copy, reproduce, or distribute content without prior written permission.</p>
-
-							<h2>4. Payments and Fees</h2>
-							<p>If the Website offers paid services or products, you agree to pay all fees and taxes associated with them. All payments must be made through authorized payment channels.</p>
-
-							<h2>5. Intellectual Property</h2>
-							<p>V2F Baazar and its licensors retain all rights, titles, and interests in all intellectual property associated with the Website, including trademarks, logos, and content.</p>
-
-							<h2>6. Disclaimers</h2>
-							<p>We provide the Website “as is” and make no warranties regarding its accuracy, reliability, or availability. V2F Baazar is not responsible for any losses or damages arising from your use of the Website.</p>
-
-							<h2>7. Limitation of Liability</h2>
-							<p>To the extent permitted by law, V2F Baazar and its affiliates shall not be liable for any indirect, incidental, special, or consequential damages.</p>
-
-							<h2>8. Changes to Terms</h2>
-							<p>We may modify these Terms at any time. Updated Terms will be posted on this page with the effective date.</p>
-
-							<h2>9. Governing Law</h2>
-							<p>These Terms are governed by the laws of India. Any disputes will be resolved in the appropriate courts in India.</p>
-
-							<h2>10. Contact Us</h2>
-							<p>If you have questions regarding these Terms, contact us at: <strong>support@v2fbaazar.com</strong></p>
-
-							<p><em>Last updated: January 04, 2026</em></p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-<!-- End of Contact Cta section
-	============================================= -->
-	
-	
-	 
-
+<section class="py-5" style="background:#f7fcf7;">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="rm-policy-card">
+                    <span class="rm-brand-highlight" style="margin-top:0; margin-bottom:16px;"><i class="fa fa-file-contract"></i> Terms & Conditions</span>
+                    <h3 style="font-size:2rem; font-weight:800; color:#2e7d32; margin-bottom:12px;">Using our platform responsibly</h3>
+                    <p style="color:#5d695f; line-height:1.8;">Welcome to Rich Money. By using our website and services, you agree to follow the terms below and use the platform in a respectful and lawful way.</p>
+                    <div class="mt-4">
+                        <h5 style="font-weight:700; color:#2e7d32;">1. Use of the website</h5>
+                        <p style="color:#5d695f;">You agree to use our website only for lawful purposes and in a way that does not harm the platform, its users, or our services.</p>
+                        <h5 style="font-weight:700; color:#2e7d32;">2. Account responsibility</h5>
+                        <p style="color:#5d695f;">If you create an account, you are responsible for keeping your login details secure and for all activities under your account.</p>
+                        <h5 style="font-weight:700; color:#2e7d32;">3. Orders and payments</h5>
+                        <p style="color:#5d695f;">All orders are subject to availability and payment completion. Prices and promotions may change as per our policy.</p>
+                        <h5 style="font-weight:700; color:#2e7d32;">4. Intellectual property</h5>
+                        <p style="color:#5d695f;">All content, images, and branding belong to Rich Money unless clearly stated otherwise.</p>
+                        <h5 style="font-weight:700; color:#2e7d32;">5. Contact</h5>
+                        <p style="color:#5d695f;">For questions, contact us at <a href="mailto:info.richmoney1@gmail.com" style="color:#4caf50;">info.richmoney1@gmail.com</a> or call <a href="tel:+919534737643" style="color:#4caf50;">+91 9534737643</a>.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 @endsection

@@ -1,5 +1,5 @@
 @extends('frontend.layouts.master')
-@section('title') About Us @endsection
+@section('title') About Us - Rich Money @endsection
 @section('content')
 <section id="ed-breadcrumb" class="ed-breadcrumb-sec" data-background="{{ static_asset('assets/assets_web/images/header-about5.jpg') }}">
 		<div class="container">
@@ -14,14 +14,15 @@
 			</div>
 		</div>
 	</section>
+	<br /><br />
 <section id="ed-about-2" class="premium-about-section py-120">
     <div class="container">
         <div class="row align-items-center justify-content-center g-5">
 
             <!-- Left Image -->
             <div class="col-lg-5 animate-item stagger">
-                <div class="about-img-wrap">
-                    <img src="{{ static_asset('assets/assets_web/images/ab2.jpg') }}" alt="About Image">
+                <div class="about-img-wrap awrap">
+                    <img src="{{ static_asset('assets/assets_web/images/garden.jpg') }}" alt="About Image">
                 </div>
             </div>
 
@@ -29,39 +30,38 @@
             <div class="col-lg-6 animate-item stagger">
                 <div class="about-content">
                     <h2 class="about-title">
-                        About Us – <span class="highlight">V2F BAAZAR</span>
+                        About Us – <span class="highlight">Rich Money</span>
                     </h2>
 
                     <p class="about-desc mt-4">
-						V2FBaazar is a trusted and fast-growing home solutions brand committed to transforming 
-						the shopping experience for families across Bihar. Built on the foundation of quality, 
-						affordability, and customer satisfaction, we provide a wide selection of home essentials 
+						Rich Money is a trusted and fast-growing plant and garden solutions brand committed to transforming 
+						the gardening experience for families. Built on the foundation of quality, 
+						affordability, and customer satisfaction, we provide a wide selection of gardening essentials 
 						designed to improve everyday living.  
 						<br><br>
 
-						Our product range includes premium palang, durable steel and Godrej-style almirahs, 
-						energy-efficient refrigerators, high-performance washing machines, kitchen appliances, 
-						and essential household products — all carefully selected to meet the diverse needs of 
-						modern homes. Every product we offer goes through a quality check to ensure durability, 
-						functionality, and long-lasting performance.  
+						Our product range includes premium indoor plants, outdoor plants, flowering plants, medicinal plants, 
+						gardening tools, pots and planters, and essential garden products — all carefully selected to meet the diverse needs of 
+						modern homes. Every product we offer goes through a quality check to ensure health, 
+						freshness, and long-lasting greenery.  
 						<br><br>
 
-						At V2FBaazar, we believe that making a home comfortable should not be expensive or complicated. 
+						At Rich Money, we believe that making a garden beautiful should not be expensive or complicated. 
 						That’s why we focus on transparent pricing, reliable service, and honest product value. 
 						Our team is dedicated to helping customers make informed choices by providing clear 
-						information, assisting in product comparison, and offering dependable after-sales support.  
+						information, assisting in plant care, and offering dependable after-sales support.  
 						<br><br>
 
 						We take pride in our customer-first approach — from fast and secure delivery to 
-						doorstep support and personalized assistance. Whether you are furnishing a new home 
-						or upgrading your existing space, V2FBaazar is your one-stop destination for trusted 
-						home solutions.  
+						doorstep support and personalized assistance. Whether you are creating a new garden 
+						or upgrading your existing space, Rich Money is your one-stop destination for trusted 
+						garden solutions.  
 						<br><br>
 
 						With a commitment to continuous improvement, we aim to expand our offerings, introduce 
-						more trusted brands, and make modern lifestyle products accessible to families in every 
-						corner of Bihar. V2FBaazar is not just a shopping destination — it is a partner in 
-						building better homes, better comfort, and better living for every customer we serve.
+						more trusted varieties, and make modern lifestyle plants accessible to families everywhere. 
+						Rich Money is not just a shopping destination — it is a partner in 
+						building better gardens, better environments, and better living for every customer we serve.
 					</p>
 
 
@@ -94,8 +94,8 @@
             <div class="ed-sec-title-3 text-center headline-3 pera-content">
 
                 <div class="subtitle ed-sec-tt-anim ed-has-anim-char">
-                    Upgrade your home with premium furniture, trusted appliances, 
-                    and high-quality essentials from <strong>V2FBaazar</strong>. 
+                    Upgrade your home with premium plants, trusted gardening tools, 
+                    and high-quality essentials from <strong>Rich Money</strong>. 
                     Enjoy great prices, reliable products, and fast delivery.
                 </div>
 
@@ -105,7 +105,7 @@
             </div>
 
             <div class="ed-btn-3">
-                <a href="/products">
+                <a href="{{ route('shop') }}">
                     <span data-back="Browse Products" data-front="Browse Products"></span>
                     <img src="{{ static_asset('assets/assets_web/images/arrow-3.png') }}" alt="">
                 </a>

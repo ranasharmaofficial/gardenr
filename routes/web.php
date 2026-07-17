@@ -149,6 +149,14 @@ Route::get('about', function () {
 Route::get('wishlist', function () {
     return view('frontend.wishlist');
 })->name('wishlist');
+
+// RichMoney - New Pages
+Route::get('legal', function () {
+    return view('frontend.legal');
+})->name('legal');
+Route::get('business-plan', function () {
+    return view('frontend.business_plan');
+})->name('businessPlan');
 Route::get('why-choose-us', [CommonController::class, 'whyChooseUs'])->name('whyChooseUs');
 // Route::get('quality-policy', [CommonController::class, 'qualityPolicy'])->name('qualityPolicy');
 Route::get('manufacturing-marketing', [CommonController::class, 'manufacturingMarketing'])->name('manufacturingMarketing');

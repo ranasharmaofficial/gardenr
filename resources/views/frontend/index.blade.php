@@ -6,44 +6,103 @@
 @endsection
 @section('content')
 
-    <!-- slider-area-start -->
-    {{-- @include('frontend.partials.slider') --}}
+    <!-- ========== DYNAMIC BANNER SLIDER ========== -->
     <main class="main">
-        <div class="home-slider slide-animate owl-carousel owl-theme show-nav-hover nav-big mb-2 text-uppercase" data-owl-options="{
-				'loop': false
+        <div class="rm-banner-wrapper">
+            <div class="home-slider slide-animate owl-carousel owl-theme show-nav-hover nav-big mb-2 text-uppercase rm-dynamic-slider" data-owl-options="{
+				'loop': true,
+				'autoplay': true,
+				'autoplayTimeout': 5000,
+				'autoplayHoverPause': true,
+				'animateOut': 'fadeOut',
+				'animateIn': 'fadeIn',
+				'nav': true,
+				'dots': true
 			}">
-            <div class="home-slide home-slide1 banner">
-                <img class="slide-bg" style="width: 100%; height: 560px; object-fit: cover; object-position: center; background-color: #ccc;" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}" alt="slider image">
-                <div class="container d-flex align-items-center">
-                    <div class="banner-layer appear-animate" data-animation-name="fadeInUpShorter">
-                        <h4 class="text-transform-none m-b-3 s-content">Bring Nature Closer to Your Home!</h4>
-                        <h2 class="text-transform-none mb-0 s-content">Plant Collection Sale</h2>
-                        <h3 class="m-b-3 s-content">Up To 50% Off</h3>
-                        <a href="#" class="btn btn-dark btn-lg">Shop Now!</a>
-                    </div>
-                    <!-- End .banner-layer -->
-                </div>
-            </div>
-            <!-- End .home-slide -->
 
-            <div class="home-slide home-slide2 banner banner-md-vw">
-                <img class="slide-bg" style="width: 100%; height: 560px; object-fit: cover; object-position: center; background-color: #ccc;" src="{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}" alt="slider image">
-                <div class="container d-flex align-items-center">
-                    <div class="banner-layer d-flex justify-content-center appear-animate" data-animation-name="fadeInUpShorter">
-                        <div class="mx-auto">
-                            <h4 class="m-b-1 s-content">Special</h4>
-                            <h3 class="m-b-2 s-content">30% Off</h3>
-                            <h3 class="mb-2 heading-border s-content">Plants & Planters</h3>
-                            <h2 class="text-transform-none m-b-4">Green Garden Sale</h2>
-                            <a href="" class="btn btn-block btn-dark">Shop All Plants</a>
+                {{-- SLIDE 1 - Fresh Plants Sale --}}
+                <div class="home-slide home-slide1 banner rm-slide">
+                    <div class="rm-slide-bg" style="background: linear-gradient(to right, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.15) 100%), url('{{ static_asset('assets/assets_web/images/demoes/demo4/slider/slide-2.jpg') }}') center/cover no-repeat; height: 560px;"></div>
+                    <div class="rm-slide-content container">
+                        <div class="rm-slide-text appear-animate" data-animation-name="fadeInLeftShorter" data-animation-delay="300">
+                            <span class="rm-slide-tag"><i class="fa fa-leaf"></i> NEW SEASON COLLECTION</span>
+                            <h4 class="rm-slide-sub">Bring Nature Closer to Your Home!</h4>
+                            <h2 class="rm-slide-title">Fresh <span>Plant</span> Collection</h2>
+                            <h3 class="rm-slide-offer">Up To <strong>50% Off</strong> — Limited Time</h3>
+                            <div class="rm-slide-info">
+                                <span><i class="fa fa-truck"></i> Free Delivery</span>
+                                <span><i class="fa fa-leaf"></i> 500+ Varieties</span>
+                                <span><i class="fa fa-shield-alt"></i> Quality Assured</span>
+                            </div>
+                            <div class="rm-slide-actions">
+                                <a href="{{ route('shop') }}" class="rm-slide-btn rm-slide-btn-primary">
+                                    <i class="fa fa-shopping-bag"></i> Shop Now
+                                </a>
+                                <a href="{{ url('about-us') }}" class="rm-slide-btn rm-slide-btn-outline">
+                                    Learn More <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                    <!-- End .banner-layer -->
                 </div>
+
+                {{-- SLIDE 2 - Pots & Planters --}}
+                <div class="home-slide home-slide2 banner rm-slide">
+                    <div class="rm-slide-bg" style="background: linear-gradient(to left, rgba(0,0,0,0.55) 40%, rgba(0,0,0,0.15) 100%), url('{{ static_asset('assets/assets_web/images/garden.jpg') }}') center/cover no-repeat; height: 560px;"></div>
+                    <div class="rm-slide-content container">
+                        <div class="rm-slide-text rm-slide-text-right appear-animate" data-animation-name="fadeInRightShorter" data-animation-delay="300">
+                            <span class="rm-slide-tag rm-slide-tag-gold"><i class="fa fa-star"></i> SPECIAL OFFER</span>
+                            <h4 class="rm-slide-sub">Premium Quality Pots & Planters</h4>
+                            <h2 class="rm-slide-title">Green Garden <span style="color:#81c784;">Sale</span></h2>
+                            <h3 class="rm-slide-offer"><strong>30% Off</strong> on All Pots & Planters</h3>
+                            <div class="rm-slide-info">
+                                <span><i class="fa fa-palette"></i> 100+ Designs</span>
+                                <span><i class="fa fa-cube"></i> All Materials</span>
+                                <span><i class="fa fa-smile"></i> 5000+ Happy Customers</span>
+                            </div>
+                            <div class="rm-slide-actions">
+                                <a href="{{ route('shop') }}" class="rm-slide-btn rm-slide-btn-gold">
+                                    <i class="fa fa-shopping-bag"></i> Explore Collection
+                                </a>
+                                <a href="{{ route('contact') }}" class="rm-slide-btn rm-slide-btn-outline">
+                                    Contact Us <i class="fa fa-phone-alt"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {{-- SLIDE 3 - Business / Join Us --}}
+                <div class="home-slide home-slide3 banner rm-slide">
+                    <div class="rm-slide-bg" style="background: linear-gradient(135deg, rgba(27,94,32,0.88) 0%, rgba(46,125,50,0.75) 50%, rgba(0,0,0,0.4) 100%), url('{{ static_asset('assets/assets_web/images/demoes/demo4/banners/banner-4.jpg') }}') center/cover no-repeat; height: 560px;"></div>
+                    <div class="rm-slide-content container">
+                        <div class="rm-slide-text rm-slide-text-center appear-animate" data-animation-name="fadeInUpShorter" data-animation-delay="300">
+                            <span class="rm-slide-tag rm-slide-tag-white"><i class="fa fa-chart-line"></i> BUSINESS OPPORTUNITY</span>
+                            <h4 class="rm-slide-sub" style="color:#a5d6a7;">Join India's Growing Plant Business Network</h4>
+                            <h2 class="rm-slide-title">Grow Your <span style="color:#a5d6a7;">Business</span></h2>
+                            <h3 class="rm-slide-offer">Earn <strong>₹15,000–₹1,50,000+</strong> Monthly</h3>
+                            <div class="rm-slide-info">
+                                <span><i class="fa fa-users"></i> 10,000+ Partners</span>
+                                <span><i class="fa fa-rupee-sign"></i> Attractive Commission</span>
+                                <span><i class="fa fa-headset"></i> 24/7 Support</span>
+                            </div>
+                            <div class="rm-slide-actions">
+                                <a href="{{ route('register') }}" class="rm-slide-btn rm-slide-btn-primary">
+                                    <i class="fa fa-user-plus"></i> Join Now
+                                </a>
+                                <a href="{{ url('business-plan') }}" class="rm-slide-btn rm-slide-btn-outline">
+                                    View Plan <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
-            <!-- End .home-slide -->
+            {{-- End .home-slider --}}
         </div>
-        <!-- End .home-slider -->
+
+
 
         <div class="container">
             <div class="info-boxes-slider owl-carousel owl-theme mb-2" data-owl-options="{
@@ -147,6 +206,33 @@
             </div>-->
         </div>
         <!-- End .container -->
+        <section class="py-4">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <div class="rm-home-highlight h-100">
+                            <div style="font-size:1.8rem; color:#4caf50; margin-bottom:10px;"><i class="fa fa-leaf"></i></div>
+                            <h4 style="font-weight:700; color:#2e7d32;">Fresh & Healthy Plants</h4>
+                            <p class="mb-0" style="color:#5d695f;">Bring home vibrant greenery with expert care and safe delivery.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rm-home-highlight h-100">
+                            <div style="font-size:1.8rem; color:#4caf50; margin-bottom:10px;"><i class="fa fa-hand-holding-heart"></i></div>
+                            <h4 style="font-weight:700; color:#2e7d32;">Easy Plant Guidance</h4>
+                            <p class="mb-0" style="color:#5d695f;">Helpful support for plant care, repotting, and healthy growth.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="rm-home-highlight h-100">
+                            <div style="font-size:1.8rem; color:#4caf50; margin-bottom:10px;"><i class="fa fa-truck"></i></div>
+                            <h4 style="font-weight:700; color:#2e7d32;">Fast Doorstep Delivery</h4>
+                            <p class="mb-0" style="color:#5d695f;">Reliable shipping to make your indoor garden setup stress-free.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
         <!-- =========================
 PLANT INFO GRID SECTION
 ========================= -->
